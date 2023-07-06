@@ -1,0 +1,304 @@
+// Desktop Header
+@keyframes header-scroll-show {
+	from {
+		transform: translateY(-140px);
+	}
+  	to {
+		transform: translateY(0);
+	}
+}
+
+@keyframes header-scroll-hide {
+	from {
+		transform: translateY(0%);
+	}
+	to {
+		transform: translateY(-140px);
+	}
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+
+header {
+	// background-color: $header-navbar-bg-color;
+	// position: fixed;
+	// top: 0;
+	// width: 100%;
+	// z-index: 1000;
+	padding: 0 !important;
+	z-index: 1011;
+	// animation: fadeInAnimation ease .5s;
+    // animation-fill-mode: forwards; 
+	border-bottom: 2px solid #dddddd;
+	
+	@media (min-width: $screen-sm) {
+		max-height: $header-height;
+	}
+
+	@media (min-width: $screen-md) {
+		&.\--scroll{
+			animation-name: header-scroll-hide;
+			animation-duration: $transition-duration;
+			animation-fill-mode: forwards;
+			.layout__header {
+				&__sections {
+					&__item--bottom {
+						&.\--logo {
+							display: flex;
+							opacity: 1;
+							transition: opacity .35s ease-in;
+						}
+
+						.logo--scroll {
+							pointer-events: all;
+						}
+					}
+				}
+			}
+		}
+
+		&.\--scroll-to-top{
+			animation-name: header-scroll-show;
+			animation-duration: $transition-duration;
+
+			.layout__header {
+				&__sections {
+					&__item--bottom {
+						&.\--logo {
+							display: flex;
+						}
+						.logo--scroll {
+							pointer-events: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.btn {
+		&__contact {
+			padding: 5px 10px!important;
+    		font-size: 12px !important;
+
+			@media (min-width: $screen-xs) {
+				padding: 6px 14px !important;
+				font-size: 14px !important;
+			}
+
+			@media(min-width: $screen-xxl) {
+				font-size: $button-font-size !important;
+			}
+		
+		}
+	}
+
+	.layout__header {
+		&__container {
+			@media (min-width: $screen-md) {
+				padding-left: 15%;
+    			padding-right: 15%;
+				width: 100%;
+			}
+		}
+		&__sections {
+			// display: flex;
+			// align-items: stretch;
+			// justify-content: space-evenly;
+			width: 100%;
+			position: relative;
+			display: flex;
+			justify-content: center;
+
+			&.\--bottom {
+				display: none;
+
+				@media (min-width: $screen-md) {
+					height: 75px;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+				}
+			}
+
+			&.\--top {
+				height: $header-height-mobile;
+				justify-content: flex-end;
+
+				@media (min-width: $screen-xs) {
+					height: 80px;
+				}
+
+				@media (min-width: $screen-md) {
+					height: 140px;
+					padding-top: 50px;
+					align-items: flex-start;
+					justify-content: center;
+				}
+			}
+
+			&__item {
+				transition: 0.35s opacity ease-in;
+
+				@media (max-width: $screen-md) {
+					align-items: center;
+					display: flex;
+				}
+
+				&.\--logo {
+					@media (max-width: $screen-md) {
+						order: 1;
+						position: absolute;
+    					left: 0;
+						height: 100%;
+					}
+
+					
+
+				}
+
+				&.\--social {
+					order: 3;
+					padding-right: 0rem;
+					padding-left: 0.5rem;
+
+					@media (min-width: 340px) {
+						padding-right: 1rem;
+					}
+
+    				@media (min-width: $screen-md) {
+						left: 60px;
+						position: absolute;
+						padding: 0px;
+						order: initial;
+					}
+				}
+				
+				&.\--right {
+					@media (max-width: $screen-md) {
+						order: 2;
+						// display: none;
+					}
+					@media (min-width: $screen-md) {
+						position: absolute;
+						right: 0;
+					}
+
+					&__burger-menu {
+						transition: 0.35s border-left ease-in;
+						@media (max-width: $screen-md) {
+							order: 4;
+							padding-left: 1rem;
+							// border-left: 1px solid rgba(112,112,112,0.25);
+							// border-left: 0.25px solid $primary-gray-color;
+						}
+					}
+				}
+
+				&--bottom {
+					display: none;
+					@media (min-width: $screen-md) {
+						&.\--logo {
+							align-items: center;
+							height: 75px;
+							position: absolute;
+							left: 6%;
+							opacity: 0;
+							transition: opacity .35s ease-in;
+							display: none;
+	
+							.logo__image {
+								max-height: 40px;
+						
+								@media (min-width: $screen-md) {
+									max-height: 42px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	.logo {
+		// display: inline-flex;
+		// max-height: 100%;
+		// height: 100%;
+    	// align-items: center;
+		// transition: 0.35s opacity ease-in;
+		padding-top: 5px;
+
+		@media (min-width: $screen-sm) {
+			max-height: 40px;
+			padding-top: 0px;
+		}
+
+		@media (min-width: $screen-md) {
+			max-height: 90px;
+		}
+		
+		img {
+			max-height: 100%;
+			height: 100%;
+			max-height: 25px;
+
+			@media (min-width: 340px) {
+				max-height: 32px;
+			}
+
+			@media (min-width: $screen-xs) {
+				max-height: 40px;
+				max-width: 100%;
+				width: auto;
+				height: auto;
+			}
+
+			@media (min-width: $screen-md) {
+				max-height: 90px;
+			}
+			
+		}
+	}
+
+	.btn-burger {
+		padding: 0px;
+
+		> span {
+			background-color: $primary-gray-color;
+			width: 25px;
+
+			&:not(:last-child) {
+				margin-bottom: 6px;
+			}
+			@media (min-width: $screen-sm) {
+				width: 30px;
+
+				&:not(:last-child) {
+					margin-bottom: 7px;
+				}
+			}
+			
+			
+		}
+	}
+}
+
+.--mobile-menu-active {
+	header {
+		.--right {
+			opacity: 0;
+		}
+		.--right__burger-menu {
+			border-left: 0px;
+		}
+	}
+}

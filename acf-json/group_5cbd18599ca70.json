@@ -1,0 +1,122 @@
+{
+    "key": "group_5cbd18599ca70",
+    "title": "Flexi \/ Row Content \/ Column \/ Column Offset",
+    "fields": [
+        {
+            "key": "field_5cbd1859a1382",
+            "label": "Mobile",
+            "name": "mobile",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "0": "No offset",
+                "1": "1\/12 Width",
+                "2": "1\/6 Width",
+                "3": "1\/4 Width",
+                "4": "1\/3 Width",
+                "6": "1\/2 Width",
+                "8": "2\/3 Width",
+                "9": "3\/4 Width",
+                "10": "5\/6 Width"
+            },
+            "default_value": 0,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5cbd1859a140f",
+            "label": "Tablet",
+            "name": "tablet",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Inherit (from mobile)",
+                "0": "No offset",
+                "1": "1\/12 Width",
+                "2": "1\/6 Width",
+                "3": "1\/4 Width",
+                "4": "1\/3 Width",
+                "6": "1\/2 Width",
+                "8": "2\/3 Width",
+                "9": "3\/4 Width",
+                "10": "5\/6 Width"
+            },
+            "default_value": "inherit",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5cbd1859a1498",
+            "label": "Desktop",
+            "name": "desktop",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "inherit": "Inherit (from tablet)",
+                "0": "No offset",
+                "1": "1\/12 Width",
+                "2": "1\/6 Width",
+                "3": "1\/4 Width",
+                "4": "1\/3 Width",
+                "6": "1\/2 Width",
+                "8": "2\/3 Width",
+                "9": "3\/4 Width",
+                "10": "5\/6 Width"
+            },
+            "default_value": "inherit",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1626686786
+}

@@ -1,0 +1,152 @@
+// Colors
+$primary:                  #5B7363;
+$secondary:                #141916;
+$light-primary:            #B6C4BA;
+$primary-text-color:       #60656B;
+$primary-gray-color:       #707070;
+
+// Colour > Brand > Primary
+$brand-primary-color:         $primary!default;
+$brand-primary-color-lighter: lighten($brand-primary-color, 30%) !default;
+$brand-primary-color-light:   lighten($brand-primary-color, 18%) !default;
+$brand-primary-color-dark:    darken($brand-primary-color, 18%) !default;
+$brand-primary-color-darker:  darken($brand-primary-color, 30%) !default;
+
+// Colour > Brand > Secondary
+$brand-secondary-color:         $secondary !default;
+$brand-secondary-color-lighter: lighten($brand-secondary-color, 30%) !default;
+$brand-secondary-color-light:   lighten($brand-secondary-color, 18%) !default;
+$brand-secondary-color-dark:    darken($brand-secondary-color, 18%) !default;
+$brand-secondary-color-darker:  darken($brand-secondary-color, 30%) !default;
+
+// Colour > Text
+$text-primary-color:         $primary-text-color !default;
+$text-primary-color-lighter: lighten($text-primary-color, 30%) !default;
+$text-primary-color-light:   lighten($text-primary-color, 18%) !default;
+$text-primary-color-dark:    #60656B;
+$text-primary-color-darker:  #60656B !default;
+
+$text-secondary-color:         #999999 !default;
+$text-secondary-color-lighter: lighten($text-secondary-color, 30%) !default;
+$text-secondary-color-light:   lighten($text-secondary-color, 18%) !default;
+$text-secondary-color-dark:    darken($text-secondary-color, 18%) !default;
+$text-secondary-color-darker:  darken($text-secondary-color, 30%) !default;
+
+// Background
+$background-color-light: #f4f4f2;
+$background-color-light-2: #f0f3f1;
+
+$primary-contrast:         $text-primary-color;
+$secondary-contrast:       $text-primary-color;
+$accent-contrast:          #fff;
+
+// WordPress Admin
+$wp-admin-bar:             32px;
+$wp-admin-bar-xs:          46px;
+
+// Fonts
+$primary-font-regular:        'EyeCatching-Regular';
+$primary-font-bold:           'EyeCatching-Regular';
+$primary-font-medium:         'EyeCatching-Regular';
+$primary-font-light:          'EyeCatching-Regular';
+$secondary-font-regular:      'Roboto-Regular';
+$secondary-font-bold:         'Roboto-Bold';
+$secondary-font-italic:       'Roboto-Italic';
+$secondary-font-medium:       'Roboto-Medium';
+
+// HTML
+$body-color: #fff;
+
+//paragraph
+$base-font-size-mobile:    15px;
+$base-font-size-tablet:    16px;
+$base-font-size:           16px;
+$base-color:               $text-primary-color;
+$link-color:               $text-primary-color-darker;
+$border-line-color:        #a8a8a8;
+$border-line-color-darker: #979797;
+
+// Header
+$header-height:            215px;
+$header-height-mobile:     60px;
+$header-navbar-bg-color:   #fff;
+$header-menu-color:        $text-primary-color-darker;
+$header-social-color:      #989898;
+$header-social-outline:    #dcdcdc;
+$header-menu-font-size:    14px;
+$header-secondary-bg-color:$brand-primary-color;
+
+// Footer
+$footer-bg-color:          $secondary;
+$footer-text-color:        $text-primary-color;
+
+// Mobile Menu
+$mobile-menu-background-color:  #fff;
+$mobile-menu-color:             $text-primary-color-darker;
+
+// Transitions
+$transition-duration:      .35s;
+$transition-duration-fast: .2s;
+$transition-duration-slow: .5s;
+$transition-duration-slower: 1s;
+
+// Box shadow
+$box-shadow:                0 3px 12px #00000059;
+$box-shadow-light:          0 3px 12px rgba(0, 0, 0, 0.2);
+
+// Buttons
+$button-default-bg-color: $brand-primary-color;
+$button-text-color:       #fff;
+$secondary-text-color:    $primary-text-color;
+$button-border-color:     $brand-primary-color;
+$button-font-size:          16px;
+$button-font-size-xs:       14px;
+
+// Forms
+$input-border-line-color: #4e4e50;
+$input-text-color:        #4e4e50;
+$input-line-height-small:   30px;
+$input-line-height-default: 55px;
+$input-line-height-large:   65px;
+
+// Preloader
+$preloader-background-color: #f3f3f1;
+$preloaded-duration: 3s;
+
+// Treatment
+$treatment-banner-form-background-color: $light-primary;
+
+// WP Admin bar
+$wp-admin-bar-height-mobile:  46px;
+$wp-admin-bar-height-desktop: 32px;
+
+// Breakpoints
+$screen-sm-heght-small: 600px;
+$screen-xl:             1400px;
+$screen-xxl:            1600px;
+$screen-xxxl:           1810px;
+
+// Container
+$container-xl:          1200px;
+$container-medium-xl:   1200px;
+$container-large-xl:    1300px;
+$container-wide-xl:     1550px;
+
+$container-medium-xxl:  1500px;
+$container-large-xxl:   1650px;
+$container-wide-xxl:    1780px;
+
+$container-padding:     	6%;
+$container-full-padding: 	30px;
+$container-padding-mobile:	30px;
+$container-full-padding-mobile:	30px;
+
+$container-medium-xxl:  1500px;
+$container-large-xxl:   1650px;
+$container-wide-xxl:    1780px;
+
+// Scaling
+$heading-font-size-difference-sm-desktop: 2px;
+$body-font-size-difference-sm-desktop:    1px;
+
+$dashed-line: 2px dashed rgba(185,196,187,0.4);

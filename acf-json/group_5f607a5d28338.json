@@ -1,0 +1,144 @@
+{
+    "key": "group_5f607a5d28338",
+    "title": "Flexi \/ Common \/ HTML",
+    "fields": [
+        {
+            "key": "field_5f607b42f9dbb",
+            "label": "Section Heading",
+            "name": "html_section_heading",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "global": "Use global setting",
+                "h1": "H1 tag",
+                "h2": "H2 tag",
+                "h3": "H3 tag",
+                "h4": "H4 tag",
+                "h5": "H5 tag",
+                "h6": "H6 tag",
+                "span": "No heading tag"
+            },
+            "default_value": "global",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f6082cef9dbe",
+            "label": "Use section title as H1",
+            "name": "settings_section_title_as_h1",
+            "type": "true_false",
+            "instructions": "Enabling this will use h1 tag for the section title. When multiple section has this option checked in one page, only the first will be used as h1.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5f607b42f9dbb",
+                        "operator": "==",
+                        "value": "global"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5f60822ef9dbc",
+            "label": "Sub Headings",
+            "name": "html_sub_headings",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "global": "Use global setting",
+                "h1": "H1 tag",
+                "h2": "H2 tag",
+                "h3": "H3 tag",
+                "h4": "H4 tag",
+                "h5": "H5 tag",
+                "h6": "H6 tag",
+                "span": "No heading tag"
+            },
+            "default_value": "global",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5f60829ff9dbd",
+            "label": "Tile Headings",
+            "name": "html_tile_headings",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "global": "Use global setting",
+                "h1": "H1 tag",
+                "h2": "H2 tag",
+                "h3": "H3 tag",
+                "h4": "H4 tag",
+                "h5": "H5 tag",
+                "h6": "H6 tag",
+                "span": "No heading tag"
+            },
+            "default_value": "global",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1626686786
+}

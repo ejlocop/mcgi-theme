@@ -1,0 +1,261 @@
+.section-tiles {
+	.\--filterable {
+		.tiles-wrapper {
+			display: flex;
+			flex-direction: column-reverse;
+			flex-wrap: wrap;
+
+			@media(min-width: $screen-sm) {
+				flex-direction: row;
+			}
+
+			.tiles {
+				position: relative;
+				order: 3;
+
+				@media (min-width: $screen-sm) {
+					padding-right: 65px;
+				}
+
+				&__items-wrapper {
+					&::after {
+						position: absolute;
+						top: 0;
+						right: 0;
+						width: 1px;
+						background-color: #979797;
+						display: block;
+						height: calc(100% - 35px);
+
+						@media (min-width: $screen-sm) {
+							content: '';
+						}
+					}
+				}
+
+				&__item {
+
+					&-wrapper {
+						&:not(:last-child) {
+							margin-bottom: 30px;
+
+							@media (min-width: $screen-sm) {
+								margin-bottom: 35px;
+							}
+						}
+					}
+				}
+
+				&__load-more {
+					flex: 1 0 100%;
+					width: 100%;
+					align-self: center;
+					justify-self: center;
+					display: block;
+					margin: auto;
+					text-align: center;
+					order: 1;
+					margin-top: 65px;
+
+					@media (min-width: $screen-sm) {
+						order: 3;
+						margin-top: 30px;
+					}
+				}
+			}
+
+			.tiles-filter {
+				margin-bottom: 35px;
+				order: 3;
+
+				@media (min-width: $screen-sm) {
+					margin-bottom: 0;
+					padding-left: 30px;
+					flex: 1;
+				}
+
+				&__heading {
+					font-size: 18px;
+					margin-top: 0;
+					margin-bottom: 25px;
+					line-height: 1;
+					text-align: center;
+
+					@media (min-width: $screen-sm) {
+						margin-bottom: 40px;
+						font-size: 24px;
+						text-align: left;
+					}
+
+					@media (min-width: $screen-sm) {
+						font-size: 22px;
+					}
+
+					@media (min-width: $screen-xxl) {
+						font-size: 24px;
+					}
+					
+
+					&-search {
+						display: none;
+
+						@media (min-width: $screen-sm) {
+							margin-bottom: 25px;
+							display: block;
+						}
+						
+					}
+				}
+
+				&__menu {
+					list-style: none;
+					padding: 0;
+					margin: 0;
+					text-align: center;
+					max-width: 375px;
+					margin: auto;
+
+					@media (min-width: $screen-sm) {
+						text-align: left;
+						max-width: unset;
+						margin: unset;
+						margin-bottom: 70px;
+					}
+
+					@media (min-width: $screen-md) {
+						margin-bottom: 60px;
+					}
+
+					@media (min-width: $screen-xl) {
+						margin-bottom: 100px;
+					}
+
+					&-item {
+						display: inline-flex;
+						align-items: center;
+						margin-bottom: 12px;
+
+						@media (min-width: $screen-sm) {
+							display: block;
+							margin-bottom: 30px;
+						}
+						@media (min-width: $screen-md) {
+							display: block;
+							margin-bottom: 15px;
+						}
+						@media (min-width: $screen-xl) {
+							display: block;
+							margin-bottom: 20px;
+						}
+						@media (min-width: $screen-xxl) {
+							display: block;
+							margin-bottom: 30px;
+						}
+
+						&:not(:last-child)::after {
+							content: '/';
+							display: inline-flex;
+							margin-left: 5px;
+							margin-right: 3px;
+
+							@media (min-width: $screen-sm) {
+								content: none;
+							}
+						}
+
+						a {
+							font-size: 12px;
+							line-height: 1;
+							text-transform: capitalize;
+
+							@media (min-width: $screen-sm) {
+								font-size: 16px;
+							}
+
+							@media (min-width: $screen-md) {
+								font-size: 12px;
+							}
+
+							@media (min-width: $screen-xl) {
+								font-size: 15px;
+							}
+
+							@media (min-width: $screen-xxl) {
+								font-size: 16px;
+							}
+							
+						}
+					}
+				}
+
+				&__search {
+					max-width: 260px;
+					margin: 13px auto 0;
+
+					@media (min-width: $screen-sm) {
+						max-width: unset;
+						margin: unset;
+					}
+
+					&-input {
+						background-image: url('../images/search.svg');
+						background-repeat: no-repeat;
+						background-position: calc(100% - 10px);
+						background-color: white;
+						padding: 15px 35px 15px 15px;
+						font-size: 16px;
+						line-height: 1;
+						min-height: unset;
+						border: none;
+
+						@media (min-width: $screen-md) {
+							font-size: 12px;
+						}
+
+						@media (min-width: $screen-xl) {
+							font-size: 15px;
+						}
+
+						@media (min-width: $screen-xxl) {
+							font-size: 16px;
+						}
+
+						&::placeholder {
+							font-size: 16px;
+							
+							@media (min-width: $screen-md) {
+								font-size: 12px;
+							}
+	
+							@media (min-width: $screen-xl) {
+								font-size: 15px;
+							}
+	
+							@media (min-width: $screen-xxl) {
+								font-size: 16px;
+							}
+						}
+					}
+
+					&-submit {
+						margin-top: 20px;
+						display: none;
+						width: 100%;
+						padding: 12px 38px;
+						max-width: 205px;
+
+						@media (min-width: $screen-sm) {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+
+		.tiles__load-more__btn {
+			width: 100%;
+			padding: 12px 38px;
+			max-width: 205px;
+		}
+	}
+}

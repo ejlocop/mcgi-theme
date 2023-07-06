@@ -1,0 +1,88 @@
+html {
+	&:root {
+		@media (min-width: $screen-sm) {
+			font-size: $base-font-size-tablet;
+		}
+	}
+}
+
+body {
+	a {
+		font-family: $secondary-font-regular;
+	}
+}
+
+p {
+	font-family: $primary-font-light;
+	line-height: inherit;
+	font-size: 14px;
+	
+	@media (min-width: $screen-sm) {
+		font-size: 14px;
+	}
+
+	@media (min-width: $screen-xxl) {
+		font-size: 1rem;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.2;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+.h1,
+h1 {
+	@include heading1;
+}
+
+.h2,
+h2 {
+	font-size: 2.5rem;
+	font-family: $primary-font-regular;
+
+	@media (min-width: $screen-sm) {
+		font-size: 2rem
+	}
+
+	@media (min-width: $screen-md) {
+		font-size: 2.5rem;
+	}
+
+	@media (min-width: $screen-lg) {
+		font-size: 2.7rem
+	}
+}
+
+.h3,
+h3 {
+	font-size: 1.5rem;
+	font-family: $primary-font-regular;
+}
+
+.h4,
+h4 {
+	font-size: 1.3rem;
+	font-family: $primary-font-regular;
+}
+
+.h5,
+h5 {
+	font-size: 1.125rem;
+	font-family: $secondary-font-regular;
+}
+
+.h6,
+h6 {
+	font-size: 1.066rem;
+	font-family: $secondary-font-regular;
+}

@@ -1,0 +1,43 @@
+// Main import files
+@import 'vendors';
+@import 'variables';
+@import 'mixins';
+// @import 'animations';
+
+// Components
+@import 'components/fonts';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/typography';
+@import 'components/main-menu';
+@import 'components/flipper';
+
+
+// Layouts
+@import 'layouts/global';
+@import 'layouts/header';
+@import 'layouts/mobile-menu';
+@import 'layouts/footer';
+
+// Modules
+// @import 'modules/table';
+@import 'modules/blocks';
+@import 'modules/flexi';
+// @import 'modules/filterable-tiles';
+@import 'modules/tiles';
+
+// Pages
+@import 'pages/global';
+@import 'pages/about';
+@import 'pages/modals';
+@import 'pages/home';
+@import 'pages/contact';
+@import 'pages/process';
+@import 'pages/facade';
+@import 'pages/inclusions';
+@import 'pages/kstudio';
+@import 'pages/home-design';
+@import 'pages/faqs';
+@import 'pages/promotion';
+@import 'pages/gallery';
+@import 'pages/display-home';

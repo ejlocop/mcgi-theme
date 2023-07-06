@@ -1,0 +1,37 @@
+
+
+.btn {
+	@include button-default;
+	text-transform: uppercase;
+	transition: border-color $transition-duration, background-color $transition-duration, color $transition-duration;
+
+	&.--secondary {
+		@include button-default-secondary;
+	}
+
+	&.\--light {
+		@include button-default-light;
+	}
+
+	&.\--dark {
+		@include button-style(transparent, $button-text-color, #fff, #fff);
+	}
+
+	&.--outline {
+		@include button-style(transparent, $button-text-color, $light-primary, $button-text-color);
+		border: 2px solid #fff;
+	}
+
+	&.--primary {
+		@include button-style(transparent, $button-text-color, $light-primary, $button-text-color);
+		border: 2px solid $brand-primary-color;
+	}
+
+	&.loading,
+	&:disabled {
+		opacity: .4;
+		cursor: not-allowed;
+		pointer-events: none;
+		touch-action: none;
+	}
+}
