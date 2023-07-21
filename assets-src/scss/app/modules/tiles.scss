@@ -1,5 +1,20 @@
 .tiles {
 	&__item {
+		background-color: white;
+		padding: 40px 30px 20px;
+		height: 100%;
+		box-shadow: $box-shadow;
+    	border-radius: 0.35rem;
+		transition: all $transition-duration ease-in;
+
+		&:hover {
+			box-shadow: $box-shadow-hover;
+		}
+
+		&-wrapper {
+			padding: 20px 40px;
+			color: $text-primary-color;
+		}
 		&__details  {
 			display: flex;
 			flex-direction: row;
@@ -41,6 +56,17 @@
 			}
 		}
 
+		&__thumbnail {
+			&__img {
+				max-width: 250px!important;
+				object-fit: cover;
+				text-align: center;
+				margin: auto;
+				display: block;
+				margin-bottom: 1.5rem;
+			}
+		}
+
 		&__btn {
 			margin-top: 1rem;
 
@@ -55,13 +81,20 @@
 		}
 
 		&__heading {
-			&.\--project-name {
-				font-family: $secondary-font-bold;
-				font-size: 24px;
+			font-family: $secondary-font-bold;
+			font-size: 22px;
+			text-align: center;
 
-				margin: 0;
-    			margin-bottom: 10px;
-			}
+			margin: 0;
+			margin-bottom: 10px;
+		}
+		&__subheading {
+			font-family: $secondary-font-medium;
+			font-size: 18px;
+			text-align: center;
+
+			margin: 0;
+			margin-bottom: 30px;
 		}
 	}
 }

@@ -1,2 +1,2 @@
-# Arkadian Homes
+# Magnus Consulting Group Inc. WordPress template
 

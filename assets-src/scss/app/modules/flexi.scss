@@ -1,22 +1,6 @@
 
 // Generic Sections
 .section {
-	// &.\--reverse-columns-desktop {
-	// 	.columns {
-	// 		flex-direction: row-reverse;
-	// 	}
-	// }
-
-	// &.section-hero-image-underlay {
-	// 	.column__content {
-	// 		img {
-	// 			box-shadow: 20px 23px #ffffff;
-	// 			margin-bottom: 20px;
-	// 			margin-right: 23px;
-	// 		}
-	// 	}
-	// }
-
 	.section__background {
 		z-index: -2;
 
@@ -110,25 +94,6 @@
 		&:after {
 			display: none;
 		}
-
-		// .column {
-		// 	&__icon {
-		// 		max-width: 47px;
-		// 		display: inline-block;
-		// 		margin-bottom: 15px;
-	
-		// 		@media(min-width: $screen-md) {
-		// 			max-width: 62px;
-		// 		}
-				
-		// 		&__img {
-		// 			@media(min-width: $screen-md) {
-		// 				@include image-crisp;
-		// 			}
-		// 			max-width: 100%;
-		// 		}
-		// 	}
-		// }
 	}
 
 	.section__container {
@@ -137,121 +102,8 @@
 	}
 }
 
-// Tiles
-.section-tiles {
-	// &.\--equal-columns {
-	// 	.columns {
-	// 		.tiles {
-	// 			&__item-wrapper {
-	// 				flex-grow: 1;
-	// 				flex-basis: 0;
-	// 				width: auto;
-	// 			}
-	// 		}
-	// 	}
-	// }
-
-	// .tiles {
-	// 	&__item {
-	// 		&.\--logo  {
-	// 			text-align: center;
-				
-	// 			.tiles__item__thumbnail {
-	// 				display: flex;
-	// 				align-items: center;
-	// 				justify-content: center;
-
-	// 				&__img {
-	// 					width: auto;
-	// 					max-width: 100%;
-	// 				}
-	// 			}
-				
-	// 		}
-	// 	}
-	// }
-}
-
-// .section-page_banner {
-// 	.section {
-// 		&__action {
-// 			&__btn {
-// 				width: auto;
-// 				display: inline-block;
-// 			}
-// 		}
-// 	}
-// }
-
-// Slider Tiles
-// .tiles-slider {
-// 	.section__container {
-// 		&:before,
-// 		&:after {
-// 			display: none;
-// 		}
-// 	}
-// 	.tiles__items-wrapper {
-// 		margin-right: 0;
-// 		margin-left: 0;
-// 		z-index: 2;
-// 		display: block;
-// 		min-width: 0px;
-// 		outline: 0;
-
-// 		&:active,
-// 		&:focus,
-// 		&:active:focus {
-// 			outline: 0;
-// 		}
-
-// 		&:before,
-// 		&:after {
-// 			display: none;
-// 		}
-
-// 		.tiles__item {
-// 			&-wrapper {
-// 				width: 100%;
-				
-// 				&:not(.slick-slide) {
-// 					float: none;
-// 				}
-// 			}
-
-// 			&__content {
-// 				padding: 20px;
-// 			}
-// 		}
-// 	}
-
-// 	.slick-initialized .slick-slide {
-// 		display: flex;
-// 		flex-direction: column;
-// 		outline: 0;
-
-// 		&:active,
-// 		&:focus,
-// 		&:active:focus {
-// 			outline: 0;
-// 		}
-// 	}
-
-// }
-
 .section__title,
 .tiles__item__heading,
 .column__heading {
 	display: block;
-	font-size: 3.25rem;
-	
-	@media (min-width: $screen-sm) {
-		font-size: 3.75rem;
-	}
-	@media (min-width: $screen-lg) {
-		font-size: 4.25rem;
-	}
-	@media (min-width: $screen-xxl) {
-		font-size: 5rem;
-	}
 }

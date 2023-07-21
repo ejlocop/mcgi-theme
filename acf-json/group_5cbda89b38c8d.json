@@ -468,7 +468,7 @@
             ]
         },
         {
-            "key": "field_5cbdc251e7b55",
+            "key": "field_64ba9fe8d8c3c",
             "label": "Post Types",
             "name": "post_types",
             "type": "select",
@@ -489,20 +489,15 @@
                 "id": ""
             },
             "choices": {
-                "post": "Post",
-                "page": "Page",
-                "attachment": "Attachment",
-                "home_designs": "Home_designs",
-                "faq": "Faq",
-                "gallery": "Gallery",
-                "modal": "Modal"
+                "people": "People",
+                "service": "Service"
             },
             "default_value": false,
             "allow_null": 0,
             "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
+            "ui": 1,
             "ajax": 0,
+            "return_format": "value",
             "placeholder": ""
         },
         {
@@ -1209,5 +1204,5 @@
     ],
     "active": false,
     "description": "",
-    "modified": 1655798711
+    "modified": 1689952282
 }

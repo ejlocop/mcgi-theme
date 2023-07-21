@@ -15,9 +15,8 @@
 	&:active,
 	&:active:focus,
 	&:hover {
-		background-color: $background-color-hover;
-		border-color: $background-color-hover;
-		color: $color-hover;
+		background-color: lighten($background-color-hover, 10%);
+		color: darken($color-hover, 90%);
 	}
 
 	@media(min-width: $screen-sm) {
@@ -26,9 +25,8 @@
 }
 
 @mixin button-default {
-	@include button-style(#5D5D5D, $secondary-text-color, $light-primary, $button-text-color);
+	@include button-style($secondary, #000, $secondary, #000);
 	font-size: $button-font-size-xs;
-	border-color: $button-border-color;
 	font-size: 14px;
 	font-family: $secondary-font-regular;
 
@@ -41,9 +39,8 @@
 }
 
 @mixin button-primary {
-	@include button-style($button-default-bg-color, #fff, $light-primary, $button-text-color);
+	@include button-style($button-default-bg-color, #000, $light-primary, #000);
 	font-size: $button-font-size-xs;
-	border-color: $button-border-color;
 
 	@media(min-width: $screen-sm) {
 		font-size: 14px;

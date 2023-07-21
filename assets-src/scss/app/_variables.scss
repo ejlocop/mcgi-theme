@@ -1,8 +1,8 @@
 // Colors
-$primary:                  #5B7363;
-$secondary:                #141916;
-$light-primary:            #B6C4BA;
-$primary-text-color:       #60656B;
+$primary:                  #1b49bb;
+$secondary:                #ffac2c;
+$light-primary:            #ffac2c;
+$primary-text-color:       #000;
 $primary-gray-color:       #707070;
 
 // Colour > Brand > Primary
@@ -45,14 +45,15 @@ $wp-admin-bar:             32px;
 $wp-admin-bar-xs:          46px;
 
 // Fonts
-$primary-font-regular:        'EyeCatching-Regular';
-$primary-font-bold:           'EyeCatching-Regular';
-$primary-font-medium:         'EyeCatching-Regular';
-$primary-font-light:          'EyeCatching-Regular';
-$secondary-font-regular:      'Roboto-Regular';
-$secondary-font-bold:         'Roboto-Bold';
-$secondary-font-italic:       'Roboto-Italic';
-$secondary-font-medium:       'Roboto-Medium';
+$primary-font-regular:   'Montserrat-Regular';
+$primary-font-extrabold: 'Montserrat-ExtraBold';
+$primary-font-bold:      'Montserrat-Bold';
+$primary-font-light:     'Montserrat-Light';
+$primary-font-medium:    'Montserrat-Medium';
+$secondary-font-regular: 'Roboto-Regular';
+$secondary-font-bold:    'Roboto-Bold';
+$secondary-font-italic:  'Roboto-Italic';
+$secondary-font-medium:  'Roboto-Medium';
 
 // HTML
 $body-color: #fff;
@@ -67,9 +68,9 @@ $border-line-color:        #a8a8a8;
 $border-line-color-darker: #979797;
 
 // Header
-$header-height:            215px;
-$header-height-mobile:     60px;
-$header-navbar-bg-color:   #fff;
+$header-height:            0;
+$header-height-mobile:     80px;
+$header-navbar-bg-color:   #1b49bb;
 $header-menu-color:        $text-primary-color-darker;
 $header-social-color:      #989898;
 $header-social-outline:    #dcdcdc;
@@ -77,7 +78,7 @@ $header-menu-font-size:    14px;
 $header-secondary-bg-color:$brand-primary-color;
 
 // Footer
-$footer-bg-color:          $secondary;
+$footer-bg-color:          #fff;
 $footer-text-color:        $text-primary-color;
 
 // Mobile Menu
@@ -91,11 +92,12 @@ $transition-duration-slow: .5s;
 $transition-duration-slower: 1s;
 
 // Box shadow
-$box-shadow:                0 3px 12px #00000059;
+$box-shadow:                0 3px 12px 1px #1b49bb63;
+$box-shadow-hover:          0 3px 15px 5px #1b49bb63;
 $box-shadow-light:          0 3px 12px rgba(0, 0, 0, 0.2);
 
 // Buttons
-$button-default-bg-color: $brand-primary-color;
+$button-default-bg-color: #ffac2c;
 $button-text-color:       #fff;
 $secondary-text-color:    $primary-text-color;
 $button-border-color:     $brand-primary-color;
@@ -144,9 +146,5 @@ $container-full-padding-mobile:	30px;
 $container-medium-xxl:  1500px;
 $container-large-xxl:   1650px;
 $container-wide-xxl:    1780px;
-
-// Scaling
-$heading-font-size-difference-sm-desktop: 2px;
-$body-font-size-difference-sm-desktop:    1px;
 
 $dashed-line: 2px dashed rgba(185,196,187,0.4);

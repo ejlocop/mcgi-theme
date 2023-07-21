@@ -1,13 +1,12 @@
 <?php 
 
-include 'inc/arkadian-helpers.php';
-include 'inc/arkadian-menus.php';
-include 'inc/arkadian-post-types.php';
-include 'inc/arkadian-shortcode.php';
-include 'inc/arkadian-widgets.php';
+include 'inc/mcgi-helpers.php';
+include 'inc/mcgi-menus.php';
+include 'inc/mcgi-widgets.php';
+include 'inc/mcgi-cpt.php';
 
 // Enqueue the new styles and scripts
-function arkadian_enqueue_styles() {
+function mcgi_enqueue_styles() {
 	// Get cache bust value
 	$cache_bust = get_field('cache_bust', 'options') ? get_field('cache_bust', 'options') : 1;
 
@@ -16,11 +15,6 @@ function arkadian_enqueue_styles() {
 	wp_register_script('theme_script_web', get_bloginfo('url') . '/wp-content/themes/base-theme/assets/app.min.js?' . $cache_bust, array('jquery'), null, true);
 	wp_register_script('child_theme_script_web', get_stylesheet_directory_uri() . '/assets/app.min.js?' . $cache_bust, array('jquery'), null, true);
 	wp_enqueue_script('child_theme_script_web');
-	
-	if(wp_style_is('theme_styles_web_woocommerce')) {
-		wp_dequeue_style( 'theme_styles_web_woocommerce' );
-		wp_deregister_style( 'theme_styles_web_woocommerce' );
-	}
 	
 	if(wp_style_is('theme_styles_web')) {
 		wp_dequeue_style( 'theme_styles_web' );
@@ -36,7 +30,7 @@ function arkadian_enqueue_styles() {
 	wp_register_script('child_google_maps', 'https://maps.googleapis.com/maps/api/js?key=' . get_field('google_map_api_key', 'options'), '', '', true);
 	wp_enqueue_script('child_google_maps');
 }
-add_action( 'wp_enqueue_scripts', 'arkadian_enqueue_styles', 12 );
+add_action( 'wp_enqueue_scripts', 'mcgi_enqueue_styles', 12 );
 
 function prefix_add_footer_styles() {
 	$cache_bust = get_field('cache_bust', 'options') ? get_field('cache_bust', 'options') : 1;
@@ -69,11 +63,3 @@ function wrap_gform_cdata_close( $content = '' ) {
     $content = ' }, false );';
     return $content;
 }
-
-// filter
-function my_posts_where( $where ) {
-	$where = str_replace("meta_key = 'facades_$", "meta_key LIKE 'facades_%", $where);
-	return $where;
-}
-
-add_filter('posts_where', 'my_posts_where');

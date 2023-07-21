@@ -1,6 +1,6 @@
 <?php
 
-function arkadian_footer_columns()
+function mcgi_footer_columns()
 {
 	register_sidebar(array(
 		'name' => __('Footer Column 1'),
@@ -34,4 +34,4 @@ function arkadian_footer_columns()
 
 }
 
-add_action('widgets_init', 'arkadian_footer_columns');
+add_action('widgets_init', 'mcgi_footer_columns');

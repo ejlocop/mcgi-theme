@@ -3,7 +3,7 @@
 .footer {
 	background-color: $footer-bg-color;
 	color: $footer-text-color;
-	font-family: $secondary-font-regular;
+	font-family: $primary-font-regular;
 	display: table-row;
 	height: 376px;
 
@@ -15,36 +15,21 @@
 		height: 300px;
 	}
 
-	a {
-		&:hover {
-			color: $footer-text-color;
-			text-decoration: none;
-		}
-	}
-
-	&__newsletter {
-	}
-
 	&__logo {
 		text-align: left;
 
 		&__img {
+			max-height: 150px;
+		}
 
-			max-height: 50px;
-
-			@media (min-width: $screen-lg) {
-				max-height: 60px;
-			}
-
-			@media (min-width: $screen-xxl) {
-				max-height: 70px;
-			}
+		.logo:hover {
+			border-bottom: none;
 		}
 	}
 
 	&__content {
 		display: flex;
-    	align-items: center;
+		align-items: center;
 		flex-direction: column;
 
 		@media (min-width: $screen-md) {
@@ -56,21 +41,6 @@
 		}
 	}
 
-	&__copyright {
-		color: #5D605E;
-		font-size: 14px;
-	}
-
-	&__credits {
-		color: #5D605E;
-		margin: 0px;
-		font-size: 14px;
-	}
-	
-	&__links {
-		
-	}
-
 	&__columns {
 
 		&.\--top {
@@ -78,84 +48,19 @@
 
 			@media (min-width: $screen-md) {
 				padding: 4.5rem 0px;
-				.--column-1 {
-					width: 25%;
+				.--column-1,
+				.--column-2,
+				.--column-3 {
+					width: 33.33333%;
 				}
-
-				.--column-2{
-					width: 70%;
-				}
-
-				.--column-3{
-					width: 5%;
-
-					
-				}
-			}
-
-			.--column-2{
-				@media (max-width: $screen-md) {
-					padding-top: 2rem;
-					padding-bottom: 2rem;
-				}
-
-				@media (min-width: $screen-md) {
-					.menu {
-						padding-top: 5px;
-					}
-				}
+				
 			}
 		}
+	}
 
-		&.\--bottom {
-			padding: 0px 0px 30px;
-
-			@media (min-width: $screen-sm) {
-				padding: 30px 0px;
-				border-top: 1px solid $primary-gray-color;
-			}
-
-			.footer__content {
-				@media (min-width: $screen-sm) {
-					display: flex;
-					justify-content: space-between;
-				}
-			}
-
-			.footer {
-				&__columns {
-					&__item {
-						@media (min-width: $screen-md) {
-							width: 50%;
-						}
-						&.\--column-1 {
-							@media (max-width: $screen-sm) {
-								span {
-									display: inline;
-								}
-							}
-
-							@media (max-width: 320px) {
-								text-align: center;
-								display: flex;
-								flex-direction: column;
-							}
-						}
-						&.\--column-2 {
-							text-align: center;
-
-							@media (max-width: $screen-sm) {
-								// display: none;
-							}
-
-							@media (min-width: $screen-md) {
-								text-align: right;
-							}
-						}
-					}
-				}
-			}
-		}
+	.wp-block-heading {
+		font-size: 20px;
+		font-family: Montserrat-SemiBold;
 	}
 
 	.block-socials {
@@ -171,48 +76,21 @@
 		}
 	}
 
-	.menu {
-		@media (max-width: $screen-sm) {
-			display: flex;
-    		flex-direction: column;
-		}
-		&-item {
-			line-height: 1;
+	&__accounts-list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 0;
+		padding-left: 20px;
+		margin: 0;
 
-			&:not(:last-child) {
-				@media (max-width: $screen-sm) {
-					margin-bottom: 20px;
-				}
-				@media (min-width: $screen-sm) {
-					margin-right: 2rem;
-				}
-				@media (min-width: $screen-lg) {
-					margin-right: 3rem;
-				}
-				@media (min-width: $screen-xl) {
-					margin-right: 5rem;
-				}
-				@media (min-width: $screen-xxl) {
-					margin-right: 6rem;
-				}
-			}
-
-			
+		&_item {
 			a {
-				font-size: 14px;
-
-				@media (min-width: $screen-lg) {
-					font-size: 16px
-				}
-				@media (min-width: $screen-xxl) {
-					font-size: 18px;
-				}
-
-				&:hover, &:active, &:focus {
-					text-decoration: none;
-					color: $brand-primary-color;
-					font-family: $secondary-font-regular;
-				}
+				width: 26px;
+				height: 26px;
+				font-size: 20px;
+				color: $primary-text-color;
 			}
 		}
 	}

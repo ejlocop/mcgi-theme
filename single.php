@@ -2,8 +2,7 @@
 
 // Post type template mappings
 $post_type_templates = [
-	'post'        =>    'post',
-	'faq'       =>  'faq'
+	'post' => 'post'
 ];
 
 

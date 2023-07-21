@@ -24,7 +24,7 @@ var assetsConfig = {
 
 gulp.task('scss--app', function() {
 	return gulp.src(assetsConfig.srcPath.scss + assetsConfig.app + '/app.scss')
-		.pipe(scss())
+		.pipe(scss({outputStyle: 'expanded'}).on('error', scss.logError))
 		.on('error', logError)
 		.pipe(cssbeautify())
 		.pipe(rename('app.css'))
@@ -41,10 +41,7 @@ gulp.task('scss', gulp.series('scss--app'));
 
 gulp.task('uglify--app', function() {
 	return gulp.src([
-			// assetsConfig.srcPath.js + 'vendor/image-loaded/image-loaded.min.js',
-			// assetsConfig.srcPath.js + 'vendor/object-fit-polyfill/object-fit.min.js',
-			// assetsConfig.srcPath.js + 'vendor/clamp/clamp.min.js',
-			assetsConfig.srcPath.js + assetsConfig.app +'/helpers.js',
+			// assetsConfig.srcPath.js + assetsConfig.app +'/helpers.js',
 			assetsConfig.srcPath.js + assetsConfig.app +'/app.js',
 		]) 
 		.pipe(concat('app.js'))

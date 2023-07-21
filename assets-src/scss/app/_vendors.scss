@@ -4,7 +4,7 @@
 @import "../vendor/bootstrap/bootstrap/mixins";
 
 // -- Customize Bootstrap variables
-// $icon-font-path: "../fonts/";
+$icon-font-path: "../fonts/";
 
 
 // Core CSS
@@ -51,12 +51,4 @@
 
 
 // -- FontAwesome
-// @import "../vendor/font-awesome/variables";
-
-// -- Customize FontAwesome variables
-// $fa-font-path: "../fonts";
-
-// @import "../vendor/font-awesome/font-awesome";
-
-// @import "../vendor/hamburgers/hamburgers";
-// @import "../vendor/slick/slick.min";
+@import "../vendor/font-awesome/variables";

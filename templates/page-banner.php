@@ -4,7 +4,6 @@
 include( locate_template("template-parts/options/common.php", false, false) );
 
 $banner_section_title = $section['heading'] ? $section['heading'] : '';
-
 ?>
 <div class="section-inner <?php echo join(' ', $classes)?>" style="<?php echo join(';', $styles) ?>">
 	<?php 
@@ -18,9 +17,13 @@ $banner_section_title = $section['heading'] ? $section['heading'] : '';
 				generate_column_offset_classes($section['content_offset']),
 				generate_column_content_alignment_classes($section['content_alignment']),
 			];
+			// echo '<pre>';
+			// var_dump($section['call_to_action_link']);
+			// echo '</pre>';
+			// die;
 		?>
 		<div class="row">
-			<div class="<?php echo implode($banner_content_classes, ' ') ?>">
+			<div class="<?php echo implode(separator: ' ', array: $banner_content_classes) ?>">
 				<?php echo flexi_generate_heading(
 					'section',
 					$banner_section_title,
@@ -35,7 +38,7 @@ $banner_section_title = $section['heading'] ? $section['heading'] : '';
 				
 				<?php 
 					// For section Call to Action
-					include get_template_directory() . '/template-parts/sections/call-to-action.php';
+					include(locate_template("template-parts/sections/call-to-action.php", false, false));
 				?>
 			</div>
 		</div>

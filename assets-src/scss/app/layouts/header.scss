@@ -1,86 +1,11 @@
-// Desktop Header
-@keyframes header-scroll-show {
-	from {
-		transform: translateY(-140px);
-	}
-  	to {
-		transform: translateY(0);
-	}
-}
-
-@keyframes header-scroll-hide {
-	from {
-		transform: translateY(0%);
-	}
-	to {
-		transform: translateY(-140px);
-	}
-}
-
-@keyframes fadeInAnimation { 
-    0% { 
-        opacity: 0; 
-    } 
-    100% { 
-        opacity: 1; 
-    } 
-} 
-
 header {
-	// background-color: $header-navbar-bg-color;
-	// position: fixed;
-	// top: 0;
-	// width: 100%;
-	// z-index: 1000;
+	background-color: transparent;
 	padding: 0 !important;
 	z-index: 1011;
-	// animation: fadeInAnimation ease .5s;
-    // animation-fill-mode: forwards; 
-	border-bottom: 2px solid #dddddd;
+	transition: all $transition-duration-fast ease-in-out;
 	
 	@media (min-width: $screen-sm) {
-		max-height: $header-height;
-	}
-
-	@media (min-width: $screen-md) {
-		&.\--scroll{
-			animation-name: header-scroll-hide;
-			animation-duration: $transition-duration;
-			animation-fill-mode: forwards;
-			.layout__header {
-				&__sections {
-					&__item--bottom {
-						&.\--logo {
-							display: flex;
-							opacity: 1;
-							transition: opacity .35s ease-in;
-						}
-
-						.logo--scroll {
-							pointer-events: all;
-						}
-					}
-				}
-			}
-		}
-
-		&.\--scroll-to-top{
-			animation-name: header-scroll-show;
-			animation-duration: $transition-duration;
-
-			.layout__header {
-				&__sections {
-					&__item--bottom {
-						&.\--logo {
-							display: flex;
-						}
-						.logo--scroll {
-							pointer-events: none;
-						}
-					}
-				}
-			}
-		}
+		background-color: transparent;
 	}
 
 	.btn {
@@ -117,30 +42,18 @@ header {
 			display: flex;
 			justify-content: center;
 
-			&.\--bottom {
-				display: none;
-
-				@media (min-width: $screen-md) {
-					height: 75px;
-					align-items: center;
-					justify-content: center;
-					display: flex;
-				}
-			}
-
 			&.\--top {
 				height: $header-height-mobile;
 				justify-content: flex-end;
 
 				@media (min-width: $screen-xs) {
-					height: 80px;
+					height: 100px;
 				}
 
 				@media (min-width: $screen-md) {
-					height: 140px;
-					padding-top: 50px;
-					align-items: flex-start;
-					justify-content: center;
+					height: 100px;
+					align-items: center;
+					justify-content: space-between;
 				}
 			}
 
@@ -159,38 +72,36 @@ header {
     					left: 0;
 						height: 100%;
 					}
-
-					
-
 				}
 
-				&.\--social {
-					order: 3;
-					padding-right: 0rem;
-					padding-left: 0.5rem;
+				&.\--menu {
+					margin-left: auto;
 
-					@media (min-width: 340px) {
-						padding-right: 1rem;
-					}
+					ul.menu {
+						gap: 40px;
 
-    				@media (min-width: $screen-md) {
-						left: 60px;
-						position: absolute;
-						padding: 0px;
-						order: initial;
+						a {
+							color: #fff;
+
+							&:is(:hover, :active, :focus, :focus-visible, :focus-within) {
+								border-bottom: none;
+								color: darken($accent-contrast, 10%)
+							}
+						}
 					}
 				}
 				
-				&.\--right {
+				&.\--action {
+					margin-left: auto;
 					@media (max-width: $screen-md) {
 						order: 2;
 						// display: none;
 					}
-					@media (min-width: $screen-md) {
-						position: absolute;
-						right: 0;
-					}
 
+					.btn {
+						border-bottom: none;
+						font-family: $secondary-font-bold;
+					}
 					&__burger-menu {
 						transition: 0.35s border-left ease-in;
 						@media (max-width: $screen-md) {
@@ -201,41 +112,19 @@ header {
 						}
 					}
 				}
-
-				&--bottom {
-					display: none;
-					@media (min-width: $screen-md) {
-						&.\--logo {
-							align-items: center;
-							height: 75px;
-							position: absolute;
-							left: 6%;
-							opacity: 0;
-							transition: opacity .35s ease-in;
-							display: none;
-	
-							.logo__image {
-								max-height: 40px;
-						
-								@media (min-width: $screen-md) {
-									max-height: 42px;
-								}
-							}
-						}
-					}
-				}
 			}
 
 		}
 	}
 
 	.logo {
-		// display: inline-flex;
-		// max-height: 100%;
-		// height: 100%;
-    	// align-items: center;
-		// transition: 0.35s opacity ease-in;
-		padding-top: 5px;
+		
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+			border-bottom: none;
+		}
 
 		@media (min-width: $screen-sm) {
 			max-height: 40px;
@@ -243,7 +132,7 @@ header {
 		}
 
 		@media (min-width: $screen-md) {
-			max-height: 90px;
+			max-height: 100px;
 		}
 		
 		img {
@@ -281,6 +170,7 @@ header {
 			}
 			@media (min-width: $screen-sm) {
 				width: 30px;
+				display: none;
 
 				&:not(:last-child) {
 					margin-bottom: 7px;
@@ -294,11 +184,8 @@ header {
 
 .--mobile-menu-active {
 	header {
-		.--right {
+		.--action {
 			opacity: 0;
-		}
-		.--right__burger-menu {
-			border-left: 0px;
 		}
 	}
 }

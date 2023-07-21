@@ -1,6 +1,6 @@
 {
-  "name": "base-theme",
-  "version": "1.0.0",
+  "name": "mcgi-theme",
+  "version": "0.0.1",
   "description": "",
   "scripts": {
     "dev": "npm run watch",
