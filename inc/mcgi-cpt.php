@@ -5,7 +5,7 @@ function mcgi_custom_posts()
 {
 
 	// sliders
-	register_post_type('People', [
+	register_post_type('people', [
 		'labels' => [
 			'name'          =>  __('People'),
 			'singular_name' =>  __('People')
@@ -21,7 +21,7 @@ function mcgi_custom_posts()
 		'rewrite'             => false,  // it shouldn't have rewrite rules
 	]);
 	
-	register_post_type('Service', [
+	register_post_type('service', [
 		'labels' => [
 			'name'          =>  __('Services'),
 			'singular_name' =>  __('Service')

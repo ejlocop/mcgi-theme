@@ -1,4 +1,5 @@
 .tiles {
+
 	&__item {
 		background-color: white;
 		padding: 40px 30px 20px;
@@ -6,6 +7,7 @@
 		box-shadow: $box-shadow;
     	border-radius: 0.35rem;
 		transition: all $transition-duration ease-in;
+		$parent: '.tiles__item';
 
 		&:hover {
 			box-shadow: $box-shadow-hover;
@@ -82,7 +84,7 @@
 
 		&__heading {
 			font-family: $secondary-font-bold;
-			font-size: 22px;
+			font-size: 18px;
 			text-align: center;
 
 			margin: 0;
@@ -90,11 +92,58 @@
 		}
 		&__subheading {
 			font-family: $secondary-font-medium;
-			font-size: 18px;
+			font-size: 16px;
 			text-align: center;
 
 			margin: 0;
 			margin-bottom: 30px;
+		}
+
+		&__description,
+		&__description p {
+			font-size: 14px;
+		}
+	}
+}
+
+
+
+.tiles {
+	.\--tile-service {
+		padding: 20px;
+
+		.tiles__item {
+			height: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+			flex-direction: column;
+			gap: 20px;
+			height: 100%;
+			
+			@media(min-width: $screen-sm) {
+				flex-direction: row;
+				height: auto;
+			}
+
+		}
+
+		.tiles__item__thumbnail {
+			
+			@media(min-width: $screen-sm) {
+				flex: 1;
+			}
+		}
+		.tiles__item__content {
+
+			@media(min-width: $screen-sm) {
+				flex: 2;
+			}
+		}
+
+		.tiles__item__heading {
+			text-align: left;
 		}
 	}
 }

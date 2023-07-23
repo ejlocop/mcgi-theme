@@ -1,12 +1,8 @@
 header {
-	background-color: transparent;
+	background-color: $primary;
 	padding: 0 !important;
 	z-index: 1011;
 	transition: all $transition-duration-fast ease-in-out;
-	
-	@media (min-width: $screen-sm) {
-		background-color: transparent;
-	}
 
 	.btn {
 		&__contact {
@@ -76,9 +72,13 @@ header {
 
 				&.\--menu {
 					margin-left: auto;
+					display: none;
+
+					@media (min-width: $screen-md) {
+						display: flex;
+					}
 
 					ul.menu {
-						gap: 40px;
 
 						a {
 							color: #fff;
@@ -90,9 +90,17 @@ header {
 						}
 					}
 				}
+
+				&.\--right__burger-menu {
+					order: 3;
+					margin-left: 20px;
+					@media (min-width: $screen-md) {
+						display: none;
+					}
+				}
 				
 				&.\--action {
-					margin-left: auto;
+					margin-left: 1.85rem;
 					@media (max-width: $screen-md) {
 						order: 2;
 						// display: none;
@@ -138,14 +146,9 @@ header {
 		img {
 			max-height: 100%;
 			height: 100%;
-			max-height: 25px;
-
-			@media (min-width: 340px) {
-				max-height: 32px;
-			}
+			max-height: 70px;
 
 			@media (min-width: $screen-xs) {
-				max-height: 40px;
 				max-width: 100%;
 				width: auto;
 				height: auto;

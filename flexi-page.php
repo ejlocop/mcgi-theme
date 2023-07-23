@@ -3,7 +3,7 @@
 /**
  * Template Name: Flexi Page
  * Description: Flexible Content
- * Template Post Type: treatment, page
+ * Template Post Type: page
  */
 ?>
 

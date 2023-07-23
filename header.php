@@ -48,7 +48,7 @@ $main_menu = [
 				<div class="layout__header__sections --top">
 					<div class="layout__header__sections__item --logo">
 						<a class="logo" href="<?php echo get_option("siteurl"); ?>">
-							<img class="logo__image" src="<?php echo get_field('company_logo', 'options')['url'] ?>" alt="<?php echo bloginfo('name') ?>" />
+							<img class="logo__image" src="<?php echo get_field('header_logo', 'options')['url'] ?>" alt="<?php echo bloginfo('name') ?>" />
 						</a>
 					</div>
 					<div class="layout__header__sections__item --menu">

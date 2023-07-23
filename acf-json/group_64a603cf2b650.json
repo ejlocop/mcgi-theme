@@ -43,6 +43,30 @@
             "mime_types": ""
         },
         {
+            "key": "field_64bccf09338c9",
+            "label": "Header Logo",
+            "name": "header_logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_64a6088f13ab7",
             "label": "Email Address",
             "name": "email_address",
@@ -112,6 +136,24 @@
                     "prepend": "",
                     "append": "",
                     "maxlength": ""
+                },
+                {
+                    "key": "field_64bc076792dca",
+                    "label": "Email Address",
+                    "name": "email_address",
+                    "type": "email",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 },
                 {
                     "key": "field_64a607e913ab3",
@@ -248,6 +290,25 @@
                     "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_64bd2a1ee02c3",
+            "label": "Google Map Embed iframe code",
+            "name": "google_map_embed_iframe_code",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         },
         {
             "key": "field_64a80522f63c9",
@@ -397,5 +458,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1689784198
+    "modified": 1690118790
 }

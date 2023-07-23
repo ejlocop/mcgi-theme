@@ -1,0 +1,51 @@
+.page-contact-us {
+	.section {
+
+		&__container {
+			padding-top: 10%;
+		}
+
+		.column {
+			&.\--company-info {
+				
+				color: white;
+
+				.column__heading {
+					color: white !important;
+				}
+				a {
+					color: white;
+				}
+			}
+
+			&.\--form {
+				.column__content {
+					padding: 30px;
+					background-color: white;
+					box-shadow: $box-shadow;
+				}
+				label {
+					width: 100%;
+				}
+				textarea {
+					resize: vertical;
+				}
+			}
+		}
+
+		&__background__overlay-color {
+			background-color: $primary;
+			height: 70%;
+		}
+	}
+
+	.map {
+		iframe {
+			width: 100%;
+		}
+	}
+
+	.location__item {
+		margin-bottom: 30px;
+	}
+}

@@ -22,4 +22,16 @@
 			}
 		}
 	}
+
+	// #section-whoweare {
+
+	// }
+
+	#section-founders {
+		.section {
+			&__title {
+				color: $primary-text-color;
+			}
+		}
+	}
 }

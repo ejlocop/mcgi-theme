@@ -9,9 +9,8 @@ input[type="tel"],
 select,
 textarea {
 	display: block;
-	border: 0;
-	border: 1px solid $primary-gray-color;
-	background-color: transparent;
+	border: none;
+	background-color: $background-color-light;
 	color: $input-text-color;
 	font-family: $secondary-font-regular;
 	font-size: 14px;
@@ -21,11 +20,7 @@ textarea {
 	-webkit-appearance: textfield;
 	-ms-appearance: textfield;
 	-o-appearance: textfield;
-	padding-top: 0;
-	padding-bottom: 0;
-	padding-right: 18px;
-	padding-left: 18px;
-	border-radius: 0;
+	padding: 10px;
 
 	&:active,
 	&:focus,

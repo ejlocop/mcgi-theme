@@ -184,31 +184,35 @@
             "prefix_name": 1
         },
         {
-            "key": "field_5cbda89b40fbc",
+            "key": "field_64bac5e6df750",
             "label": "Template File",
             "name": "template_file",
             "type": "select",
             "instructions": "",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cbda89b411ca",
+                        "operator": "!=",
+                        "value": "dynamic"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
             "choices": {
-                "default": "Default",
-                "news": "News",
-                "project": "Project",
-                "faq": "FAQ",
-                "gallery": "Gallery"
+                "default": "Default"
             },
-            "default_value": "default",
+            "default_value": false,
             "allow_null": 0,
             "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
+            "ui": 1,
             "ajax": 0,
+            "return_format": "value",
             "placeholder": ""
         },
         {
@@ -299,10 +303,10 @@
             },
             "allow_null": 0,
             "other_choice": 0,
-            "save_other_choice": 0,
-            "default_value": "static",
+            "default_value": "dynamic",
             "layout": "horizontal",
-            "return_format": "value"
+            "return_format": "value",
+            "save_other_choice": 0
         },
         {
             "key": "field_5cbda89b41252",
@@ -468,9 +472,9 @@
             ]
         },
         {
-            "key": "field_64ba9fe8d8c3c",
-            "label": "Post Types",
-            "name": "post_types",
+            "key": "field_64bab3ca03215",
+            "label": "Post Type",
+            "name": "post_type",
             "type": "select",
             "instructions": "",
             "required": 0,
@@ -804,43 +808,6 @@
             "step": 1
         },
         {
-            "key": "field_608680daa09fb",
-            "label": "Show",
-            "name": "show_under_name",
-            "type": "radio",
-            "instructions": "Select what to display under the name.",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5cbda89b411ca",
-                        "operator": "==",
-                        "value": "dynamic"
-                    },
-                    {
-                        "field": "field_5cbdc251e7b55",
-                        "operator": "==",
-                        "value": "testimonial"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "company": "Company",
-                "position": "Position"
-            },
-            "allow_null": 0,
-            "other_choice": 0,
-            "default_value": "company",
-            "layout": "vertical",
-            "return_format": "value",
-            "save_other_choice": 0
-        },
-        {
             "key": "field_5cbda89b684cc",
             "label": "Parent Pages",
             "name": "parent_pages",
@@ -900,41 +867,6 @@
                 "id": ""
             },
             "taxonomy": "category",
-            "field_type": "multi_select",
-            "allow_null": 0,
-            "add_term": 0,
-            "save_terms": 0,
-            "load_terms": 0,
-            "return_format": "id",
-            "multiple": 0
-        },
-        {
-            "key": "field_608142c5aea43",
-            "label": "FAQs Categories",
-            "name": "post_category_faq",
-            "type": "taxonomy",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5cbda89b411ca",
-                        "operator": "==",
-                        "value": "dynamic"
-                    },
-                    {
-                        "field": "field_5cbdc251e7b55",
-                        "operator": "==",
-                        "value": "faq"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "taxonomy": "faq_category",
             "field_type": "multi_select",
             "allow_null": 0,
             "add_term": 0,
@@ -1193,7 +1125,7 @@
     ],
     "menu_order": 0,
     "position": "acf_after_title",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
@@ -1204,5 +1136,5 @@
     ],
     "active": false,
     "description": "",
-    "modified": 1689952282
+    "modified": 1689962088
 }

@@ -1,5 +1,5 @@
 // Colors
-$primary:                  #1b49bb;
+$primary:                  #000080;
 $secondary:                #ffac2c;
 $light-primary:            #ffac2c;
 $primary-text-color:       #000;
@@ -70,7 +70,7 @@ $border-line-color-darker: #979797;
 // Header
 $header-height:            0;
 $header-height-mobile:     80px;
-$header-navbar-bg-color:   #1b49bb;
+$header-navbar-bg-color:   #000080;
 $header-menu-color:        $text-primary-color-darker;
 $header-social-color:      #989898;
 $header-social-outline:    #dcdcdc;
@@ -92,8 +92,8 @@ $transition-duration-slow: .5s;
 $transition-duration-slower: 1s;
 
 // Box shadow
-$box-shadow:                0 3px 12px 1px #1b49bb63;
-$box-shadow-hover:          0 3px 15px 5px #1b49bb63;
+$box-shadow:                0 3px 12px 1px #00008063;
+$box-shadow-hover:          0 3px 15px 5px #00008063;
 $box-shadow-light:          0 3px 12px rgba(0, 0, 0, 0.2);
 
 // Buttons
