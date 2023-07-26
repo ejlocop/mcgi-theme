@@ -57,15 +57,7 @@ img {
 // Layout
 .layout {
 	&__content {
-		padding-top: $header-height-mobile;
-		
-		@media (min-width: $screen-xs) {
-			padding-top: 80px;
-		}
-
-		@media (min-width: $screen-md) {
-			padding-top: $header-height;
-		}
+		padding-top: 0;
 	}
 
 	&__site-wrapper {

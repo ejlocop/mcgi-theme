@@ -24,37 +24,6 @@ $email_address = $office_location['email_address'] ? $office_location['email_add
 			<div class="section__background__overlay-color"></div>
 		</div>
 		<style>
-			#section_0 .section__background {
-				background: none
-			}
-
-			#section_0 .section__background__overlay-color {
-				background: none
-			}
-
-			#section_0 .section__background__video {
-				display: none
-			}
-
-			@media(min-width:767px) {
-				#section_0 .section__background {
-					background: none
-				}
-
-				#section_0 .section__background__video {
-					display: none
-				}
-			}
-
-			@media(min-width:992px) {
-				#section_0 .section__background {
-					background: none
-				}
-
-				#section_0 .section__background__video {
-					display: none
-				}
-			}
 		</style>
 		<div class="section__container container">
 			<div class="row columns">

@@ -4,6 +4,9 @@
 include( locate_template("template-parts/options/common.php", false, false) );
 
 $banner_section_title = $section['heading'] ? $section['heading'] : '';
+
+// always set call to action visible for page banner
+$section['show_call_to_action'] = true;
 ?>
 <div class="section-inner <?php echo join(' ', $classes)?>" style="<?php echo join(';', $styles) ?>">
 	<?php 

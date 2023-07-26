@@ -205,7 +205,7 @@
                 "id": ""
             },
             "choices": {
-                "default": "Default"
+                "gallery": "Gallery"
             },
             "default_value": false,
             "allow_null": 0,
@@ -1136,5 +1136,5 @@
     ],
     "active": false,
     "description": "",
-    "modified": 1689962088
+    "modified": 1690213466
 }

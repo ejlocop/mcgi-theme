@@ -34,4 +34,8 @@
 		pointer-events: none;
 		touch-action: none;
 	}
+
+	&:hover {
+		border: none;
+	}
 }

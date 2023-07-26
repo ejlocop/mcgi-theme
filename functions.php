@@ -8,7 +8,7 @@ include 'inc/mcgi-cpt.php';
 // Enqueue the new styles and scripts
 function mcgi_enqueue_styles() {
 	// Get cache bust value
-	$cache_bust = get_field('cache_bust', 'options') ? get_field('cache_bust', 'options') : 1;
+	$cache_bust = get_field('cache_bust', 'options') ? get_field('cache_bust', 'options') : 2;
 
 	// Enque child styles and css
 	// wp_enqueue_style('child_theme_styles_web', get_stylesheet_directory_uri() . '/assets/app.min.css?' . $cache_bust, array(), null);
@@ -33,7 +33,7 @@ function mcgi_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'mcgi_enqueue_styles', 12 );
 
 function prefix_add_footer_styles() {
-	$cache_bust = get_field('cache_bust', 'options') ? get_field('cache_bust', 'options') : 1;
+	$cache_bust = get_field('cache_bust', 'options') ? get_field('cache_bust', 'options') : 2;
 	wp_enqueue_style('theme_styles_web',  get_bloginfo('url') . '/wp-content/themes/base-theme/assets/app.min.css?' . $cache_bust, array(), null);
 	wp_enqueue_style('child_theme_styles_web', get_stylesheet_directory_uri() . '/assets/app.min.css?' . $cache_bust, array(), null);
 	

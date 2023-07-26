@@ -5,6 +5,14 @@ $light-primary:            #ffac2c;
 $primary-text-color:       #000;
 $primary-gray-color:       #707070;
 
+// slider
+$slider-bg-fill:    $secondary;
+$slider-bg-fill-hover: #fff;
+$slider-bg-stroke:  #fff;
+$slider-bg-stroke-hover:  $secondary;
+$slider-arrow-stroke: #fff;
+$slider-arrow-stroke-hover: $secondary;
+
 // Colour > Brand > Primary
 $brand-primary-color:         $primary!default;
 $brand-primary-color-lighter: lighten($brand-primary-color, 30%) !default;

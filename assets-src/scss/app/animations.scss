@@ -1,103 +1,103 @@
 // Flexi Animations
-// .section-fadein-standard {
-// 	.section__intro,
-// 	.column__heading,
-// 	.column__content,
-// 	.section__action,
-// 	.page-banner__content__main,
-// 	.page-banner__content__additional__inner,
-// 	.homepage-hero__slides__item__content,
-// 	.tiles {
-// 		opacity: 0;
-// 		transition: opacity $transition-duration-slow ease-out;
-// 		transition-delay: $transition-duration;
-// 	}
+.section-fadein-standard {
+	.section__intro,
+	.column__heading,
+	.column__content,
+	.section__action,
+	.page-banner__content__main,
+	.page-banner__content__additional__inner,
+	.homepage-hero__slides__item__content,
+	.tiles {
+		opacity: 0;
+		transition: opacity $transition-duration-slow ease-out;
+		transition-delay: $transition-duration;
+	}
 
-// 	.column__content {
-// 		transition-duration: $transition-duration-slower;
-// 	}
+	.column__content {
+		transition-duration: $transition-duration-slower;
+	}
 
-// 	.page-banner__content__main {
-// 		transition-duration: $transition-duration-slow;
-// 	}
+	.page-banner__content__main {
+		transition-duration: $transition-duration-slow;
+	}
 
-// 	.page-banner__content__additional__inner {
-// 		transition-duration: $transition-duration-slower;
-// 	}
+	.page-banner__content__additional__inner {
+		transition-duration: $transition-duration-slower;
+	}
 	
-// 	.tiles {
-// 		transition-delay: $transition-duration + .3s;
-// 		transition-duration: $transition-duration-slower;
-// 	}
+	.tiles {
+		transition-delay: $transition-duration + .3s;
+		transition-duration: $transition-duration-slower;
+	}
 
-// 	.section__action {
-// 		transition-delay: $transition-duration + .4s;
-// 	}
+	.section__action {
+		transition-delay: $transition-duration + .4s;
+	}
 
-// 	&.\--animated {
-// 		.section__intro,
-// 		.column__heading,
-// 		.column__content,
-// 		.section__action,
-// 		.page-banner__content__main,
-// 		.page-banner__content__additional__inner,
-// 		.homepage-hero__slides__item__content,
-// 		.tiles {
-// 			opacity: 1;
-// 		}
-// 	}
-// }
+	&.\--animated {
+		.section__intro,
+		.column__heading,
+		.column__content,
+		.section__action,
+		.page-banner__content__main,
+		.page-banner__content__additional__inner,
+		.homepage-hero__slides__item__content,
+		.tiles {
+			opacity: 1;
+		}
+	}
+}
 
-// .section-fadein-up {
-// 	transform: translateY(100px);
-// 	opacity: 0;
-// 	transition: opacity $transition-duration-slow ease-out, transform $transition-duration-slower ease-out;
+.section-fadein-up {
+	transform: translateY(100px);
+	opacity: 0;
+	transition: opacity $transition-duration-slow ease-out, transform $transition-duration-slower ease-out;
 
 
-// 	.columns,
-// 	.section__action {
-// 		transform: translateY(100px);
-// 		opacity: 0;
-// 		transition: all $transition-duration-slower ease-out;
-// 		transition-delay: $transition-duration-fast;
-// 	}
+	.columns,
+	.section__action {
+		transform: translateY(100px);
+		opacity: 0;
+		transition: all $transition-duration-slower ease-out;
+		transition-delay: $transition-duration-fast;
+	}
 
-// 	&.\--animated {
-// 		opacity: 1;
-// 		transform: translateY(0);
+	&.\--animated {
+		opacity: 1;
+		transform: translateY(0);
 		
-// 		.columns,
-// 		.section__action {
-// 			transform: translateY(0);
-// 			opacity: 1;
-// 		}
-// 	}
-// }
+		.columns,
+		.section__action {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+}
 
-// .section-fadein-content-up {
-// 	.column__heading,
-// 	.section__title,
-// 	.section__action,
-// 	.tiles,
-// 	.section__intro__icon,
-// 	.column__icon,
-// 	.block-content {
-// 		transform: translateY(100px);
-// 		opacity: 0;
-// 		transition: opacity $transition-duration-slow ease-out, transform $transition-duration-slower ease-out;
-// 		transition-delay: $transition-duration;
-// 	}
+.section-fadein-content-up {
+	.column__heading,
+	.section__title,
+	.section__action,
+	.tiles,
+	.section__intro__icon,
+	.column__icon,
+	.block-content {
+		transform: translateY(100px);
+		opacity: 0;
+		transition: opacity $transition-duration-slow ease-out, transform $transition-duration-slower ease-out;
+		transition-delay: $transition-duration;
+	}
 	
-// 	&.\--animated {
-// 		.column__heading,
-// 		.section__title,
-// 		.section__action,
-// 		.tiles,
-// 		.section__intro__icon,
-// 		.column__icon,
-// 		.block-content {
-// 			transform: translateY(0);
-// 			opacity: 1;
-// 		}
-// 	}
-// }
+	&.\--animated {
+		.column__heading,
+		.section__title,
+		.section__action,
+		.tiles,
+		.section__intro__icon,
+		.column__icon,
+		.block-content {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
+}

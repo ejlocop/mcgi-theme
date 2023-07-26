@@ -16,7 +16,11 @@
 	}
 
 	&__logo {
-		text-align: left;
+		text-align: center;
+
+		@media (min-width: $screen-sm) {
+			text-align: left;
+		}
 
 		&__img {
 			max-height: 150px;
@@ -32,7 +36,7 @@
 		align-items: center;
 		flex-direction: column;
 
-		@media (min-width: $screen-md) {
+		@media (min-width: $screen-sm) {
 			flex-direction: row;
 			align-items: flex-start;
 			width: 100%;
@@ -48,12 +52,21 @@
 
 			@media (min-width: $screen-md) {
 				padding: 4.5rem 0px;
-				.--column-1,
-				.--column-2,
-				.--column-3 {
+				.\--column-1,
+				.\--column-2,
+				.\--column-3 {
 					width: 33.33333%;
 				}
 				
+			}
+
+			.\--column-1,
+			.\--column-2 {
+				margin-bottom: 3rem;
+
+				@media (min-width: $screen-md) {
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
@@ -82,8 +95,11 @@
 		flex-direction: column;
 		gap: 20px;
 		padding: 0;
-		padding-left: 20px;
 		margin: 0;
+
+		@media (min-width: $screen-sm) {
+			padding-left: 20px;
+		}
 
 		&_item {
 			a {

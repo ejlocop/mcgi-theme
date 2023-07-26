@@ -14,7 +14,8 @@
 		}
 
 		&-wrapper {
-			padding: 20px 40px;
+			padding-bottom: 20px;
+			padding-top: 20px;
 			color: $text-primary-color;
 		}
 		&__details  {
@@ -60,7 +61,7 @@
 
 		&__thumbnail {
 			&__img {
-				max-width: 250px!important;
+				max-width: 200px;
 				object-fit: cover;
 				text-align: center;
 				margin: auto;
@@ -121,8 +122,8 @@
 			flex-direction: column;
 			gap: 20px;
 			height: 100%;
-			
-			@media(min-width: $screen-sm) {
+
+			@media(min-width: $screen-md) {
 				flex-direction: row;
 				height: auto;
 			}
@@ -131,19 +132,43 @@
 
 		.tiles__item__thumbnail {
 			
-			@media(min-width: $screen-sm) {
+			@media(min-width: $screen-md) {
 				flex: 1;
+			}
+
+			&__img {
+				margin-bottom: 0;
+				max-width: 100px;
+
+				@media(min-width: $screen-sm) {
+					max-width: 150px;
+				}
 			}
 		}
 		.tiles__item__content {
 
-			@media(min-width: $screen-sm) {
+			@media(min-width: $screen-md) {
 				flex: 2;
 			}
 		}
 
 		.tiles__item__heading {
 			text-align: left;
+		}
+	}
+
+	.\--tile-gallery {
+		.tiles {
+			&__item {
+				background-color: transparent;
+				box-shadow: none;
+				padding: 0;
+
+				&__thumbnail__img {
+					max-width: unset !important;
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
 }

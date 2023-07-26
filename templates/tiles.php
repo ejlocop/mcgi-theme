@@ -89,7 +89,7 @@ else {
 	}
 }
 // echo '<pre>';
-// var_dump(fix_column_sizes($section['number_of_columns']));
+// var_dump($section['template_file']);
 // echo '</pre>';
 // die;
 ?>
