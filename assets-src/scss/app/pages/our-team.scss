@@ -4,8 +4,20 @@
 			padding: 0;
 		}
 
+		.section__title {
+			color: white;
+		}
+
 		.section__container {
 			padding-top: 10%;
+		}
+
+		.section {
+			&__background {
+				&__overlay-color {
+					height: 70%;
+				}
+			}
 		}
 	}
 }

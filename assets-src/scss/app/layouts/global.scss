@@ -67,3 +67,9 @@ img {
 		height: 100%;
 	}
 }
+
+.section-inner {
+	&.\--th-ac {
+		background-color: #fff;
+	}
+}

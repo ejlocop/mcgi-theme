@@ -62,7 +62,7 @@ jQuery(function ($) {
 			arrows: true,
 			dots: false,
 			slidesPerRow: 1,
-			autoplay: true,
+			autoplay: false,
   			autoplaySpeed: 2000,
 			mobileFirst: true,
 			lazyLoad: 'ondemand',
