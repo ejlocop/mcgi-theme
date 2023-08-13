@@ -12,6 +12,7 @@ var comment = '';
 
 var assetsConfig = {
 	app: 'app',
+	vendor: 'vendor',
 	srcPath: {
 		js:   './assets-src/js/',
 		scss: './assets-src/scss/'
@@ -42,6 +43,7 @@ gulp.task('scss', gulp.series('scss--app'));
 gulp.task('uglify--app', function() {
 	return gulp.src([
 			assetsConfig.srcPath.js + assetsConfig.app +'/helpers.js',
+			assetsConfig.srcPath.js + assetsConfig.vendor +'/aos/aos.js',
 			assetsConfig.srcPath.js + assetsConfig.app +'/app.js',
 		]) 
 		.pipe(concat('app.js'))

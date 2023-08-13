@@ -527,7 +527,7 @@
                     "label": "Animation CSS class",
                     "name": "class",
                     "type": "text",
-                    "instructions": "Specify a custom CSS class for the wanted animation. Leave blank to use the standard animation",
+                    "instructions": "Specify a custom CSS class for the wanted animation. Leave blank to use the standard animation (fade-up)\r\n\r\navailable animation classes:\r\nfade\r\nfade-up\r\nfade-down\r\nfade-left\r\nfade-right\r\nfade-up-right\r\nfade-up-left\r\nfade-down-right\r\nfade-down-left",
                     "required": 0,
                     "conditional_logic": [
                         [
@@ -569,5 +569,5 @@
     "hide_on_screen": "",
     "active": false,
     "description": "",
-    "modified": 1688996483
+    "modified": 1691948311
 }

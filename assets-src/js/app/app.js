@@ -27,6 +27,14 @@ jQuery(function ($) {
 			})
 		}
 	}
+	animateOnScroll()
+	function animateOnScroll() {
+		if(typeof AOS == undefined) {
+			return
+		}
+  		AOS.init();
+	}
+	
 	menuLinks()
 	function menuLinks() {
 		if(!$('body').hasClass('page-home')) {
