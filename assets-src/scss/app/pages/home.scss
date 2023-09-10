@@ -6,9 +6,6 @@
 		}
 
 		.section {
-			&-inner {
-
-			}
 			&__title {
 				font-family: $primary-font-bold;
 				font-size: 3.5rem;
@@ -23,9 +20,11 @@
 		}
 	}
 
-	// #section-whoweare {
-
-	// }
+	#section-whoweare {
+		em {
+			color: $primary-gray-color;
+		}
+	}
 
 	#section-founders {
 		.section {

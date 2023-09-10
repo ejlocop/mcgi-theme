@@ -3178,11 +3178,15 @@ body.admin-bar.\--scroll .mobile-menu {
 
 .tiles__item {
     background-color: white;
-    padding: 40px 30px 20px;
+    padding: 30px;
     height: 100%;
     box-shadow: 0 3px 12px 1px #00008063;
     border-radius: 0.35rem;
     transition: all 0.35s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .tiles__item:hover {
@@ -3268,7 +3272,7 @@ body.admin-bar.\--scroll .mobile-menu {
 
 .tiles__item__heading {
     font-family: "Roboto-Bold";
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     color: #000080;
     margin: 0;
@@ -3277,15 +3281,19 @@ body.admin-bar.\--scroll .mobile-menu {
 
 .tiles__item__subheading {
     font-family: "Roboto-Medium";
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     margin: 0;
     margin-bottom: 30px;
 }
 
+.tiles__item__description {
+    text-align: justify;
+}
+
 .tiles__item__description,
 .tiles__item__description p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .tiles .\--tile-service {
@@ -3310,6 +3318,18 @@ body.admin-bar.\--scroll .mobile-menu {
     }
 }
 
+.tiles .\--tile-service .tiles__item__description,
+.tiles .\--tile-service .tiles__item__heading {
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .tiles .\--tile-service .tiles__item__description,
+  .tiles .\--tile-service .tiles__item__heading {
+        text-align: left;
+    }
+}
+
 @media (min-width: 992px) {
     .tiles .\--tile-service .tiles__item__thumbnail {
         flex: 1;
@@ -3331,10 +3351,6 @@ body.admin-bar.\--scroll .mobile-menu {
     .tiles .\--tile-service .tiles__item__content {
         flex: 2;
     }
-}
-
-.tiles .\--tile-service .tiles__item__heading {
-    text-align: left;
 }
 
 .tiles .\--tile-gallery .tiles__item {
@@ -3380,6 +3396,10 @@ body.admin-bar.\--scroll .mobile-menu {
 .page-home #section-banner .section__container p {
     font-family: "Montserrat-Medium";
     font-size: 1.2rem;
+}
+
+.page-home #section-whoweare em {
+    color: #707070;
 }
 
 .page-home #section-founders .section__title {

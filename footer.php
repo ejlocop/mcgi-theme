@@ -34,7 +34,7 @@ if (!empty($before_footer_excluded_pages) && !in_array($postID, $before_footer_e
 ?>
 </div>
 </div>
-<footer class="footer">
+<footer class="footer" data-aos="fade">
 	<div class="footer__columns --top">
 		<div class="container footer__content">
 			<div class="col-xs-12 col-md-4 footer__columns__item --column-1">

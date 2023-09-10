@@ -23,8 +23,6 @@ $email_address = $office_location['email_address'] ? $office_location['email_add
 		<div class="section__background">
 			<div class="section__background__overlay-color"></div>
 		</div>
-		<style>
-		</style>
 		<div class="section__container container">
 			<div class="row columns">
 				<div class="column col-xs-12 col-sm-6 col-xs-offset-0 --company-info --text-xs-left">
@@ -47,10 +45,10 @@ $email_address = $office_location['email_address'] ? $office_location['email_add
 							<i class="location__item-icon fa fa-map-marker"></i>
 							<span class="location__item-text"><?php echo $office_location['address'] ?></span>
 						</p>
-						<?php if($google_map_embed_iframe = get_field('google_map_embed_iframe_code', 'options')): ?>
-						<div class="map">
-							<?php echo $google_map_embed_iframe ?>
-						</div>
+						<?php if ($google_map_embed_iframe = get_field('google_map_embed_iframe_code', 'options')) : ?>
+							<div class="map">
+								<?php echo $google_map_embed_iframe ?>
+							</div>
 						<?php endif; ?>
 					</div>
 

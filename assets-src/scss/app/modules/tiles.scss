@@ -2,12 +2,16 @@
 
 	&__item {
 		background-color: white;
-		padding: 40px 30px 20px;
+		padding: 30px;
 		height: 100%;
 		box-shadow: $box-shadow;
     	border-radius: 0.35rem;
 		transition: all $transition-duration ease-in;
 		$parent: '.tiles__item';
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 
 		&:hover {
 			box-shadow: $box-shadow-hover;
@@ -85,7 +89,7 @@
 
 		&__heading {
 			font-family: $secondary-font-bold;
-			font-size: 18px;
+			font-size: 20px;
 			text-align: center;
 			color: $primary;
 			margin: 0;
@@ -93,16 +97,20 @@
 		}
 		&__subheading {
 			font-family: $secondary-font-medium;
-			font-size: 16px;
+			font-size: 18px;
 			text-align: center;
 			// color: $brand-secondary-color-darker;
 			margin: 0;
 			margin-bottom: 30px;
 		}
 
+		&__description {
+			text-align: justify;
+		}
+
 		&__description,
 		&__description p {
-			font-size: 14px;
+			font-size: 16px;
 		}
 	}
 }
@@ -130,6 +138,14 @@
 
 		}
 
+		.tiles__item__description,
+		.tiles__item__heading {
+			text-align: center;
+			@media(min-width: $screen-md) {
+				text-align: left;
+			}
+		}
+
 		.tiles__item__thumbnail {
 			
 			@media(min-width: $screen-md) {
@@ -150,10 +166,6 @@
 			@media(min-width: $screen-md) {
 				flex: 2;
 			}
-		}
-
-		.tiles__item__heading {
-			text-align: left;
 		}
 	}
 
