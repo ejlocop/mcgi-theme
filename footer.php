@@ -30,7 +30,9 @@ if (!empty($before_footer_excluded_pages) && !in_array($postID, $before_footer_e
 	}
 }
 
-
+// var_dump(get_field('social_media_accounts', 'options'));
+// die;
+$social_media_accounts = get_field('social_media_accounts', 'options')
 ?>
 </div>
 </div>
@@ -46,7 +48,7 @@ if (!empty($before_footer_excluded_pages) && !in_array($postID, $before_footer_e
 					</div>
 				<?php endif; ?>
 
-				<?php if ($social_media_accounts = get_field('social_media_accounts', 'options')) : ?>
+				<?php if (is_array($social_media_accounts)) : ?>
 					<ul class="footer__accounts-list">
 						<?php foreach ($social_media_accounts as $account) : ?>
 							<li class="footer__accounts-list_item">

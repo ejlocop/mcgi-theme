@@ -1,0 +1,11 @@
+.section {
+    &__action {
+        &__btn {
+            &-wrapper {
+                .section__action__btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

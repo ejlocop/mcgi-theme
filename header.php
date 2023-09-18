@@ -11,6 +11,7 @@
 <?php
 
 $pagename = '';
+$body_class = '';
 
 if ($wp_query->post) {
 	// add page name to the body class

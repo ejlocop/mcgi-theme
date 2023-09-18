@@ -19,12 +19,10 @@
 		}*/
 		?>
 		<div class="section__action <?php echo implode(array: $call_to_action_classes, separator: ' ') ?>">
-			<div class="row">
-				<div class="section__action__btn-wrapper <?php echo implode(array: $call_to_action_button_classes, separator: ' ') ?>">
-					<a href="<?php echo $section['call_to_action_link']['url']; ?>" class="<?php echo $section['call_to_action_styled'] ? 'btn section__action__btn' : '' ?>" target="<?php echo $section['call_to_action_link']['target'] ?>">
-						<?php echo $section['call_to_action_link']['title'] ?>
-					</a>
-				</div>
+			<div class="section__action__btn-wrapper <?php echo implode(array: $call_to_action_button_classes, separator: ' ') ?>">
+				<a href="<?php echo $section['call_to_action_link']['url']; ?>" class="<?php echo $section['call_to_action_styled'] ? 'btn section__action__btn' : '' ?>" target="<?php echo $section['call_to_action_link']['target'] ?>">
+					<?php echo $section['call_to_action_link']['title'] ?>
+				</a>
 			</div>
 		</div>
 

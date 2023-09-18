@@ -3364,6 +3364,10 @@ body.admin-bar.\--scroll .mobile-menu {
     margin-bottom: 0;
 }
 
+.section__action__btn-wrapper .section__action__btn {
+    width: 100%;
+}
+
 .error404__section .column__heading {
     font-size: 22px;
     color: #000;
@@ -3447,6 +3451,20 @@ body.admin-bar.\--scroll .mobile-menu {
 
 .page-contact-us .location__item {
     margin-bottom: 30px;
+}
+
+.page-contact-us .\--company-info {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+    .page-contact-us .\--company-info {
+        margin-bottom: 0;
+    }
+}
+
+.page-contact-us .\--form .column__content {
+    height: 100%;
 }
 
 .page-our-team #section-gallery .tiles__item-wrapper {

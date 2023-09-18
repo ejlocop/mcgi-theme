@@ -48,4 +48,18 @@
 	.location__item {
 		margin-bottom: 30px;
 	}
+
+	.\--company-info {
+		margin-bottom: 2rem;
+
+		@media(min-width: $screen-md) {
+			margin-bottom: 0;
+		}
+	}
+
+	.\--form {
+		.column__content {
+			height: 100%;
+		}
+	}
 }
